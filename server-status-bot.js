@@ -1,4 +1,4 @@
-onst Discord = require('discord.js');
+const Discord = require('discord.js');
 const find = require('find-process');
 const bot = new Discord.Client();
 const TOKEN = 'Discord Token Goes Here'
