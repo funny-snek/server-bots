@@ -18,6 +18,9 @@ function update() {
             bot.user.setStatus('online')
 
             var fs = require('fs');
+            /* Change 'C://Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Always On Server/ConnectionsCount.txt'
+            below to your directory, ConnectionsCount.txt wont exist until the game+mod is first run */
+            
         fs.readFile('C://Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods/Always On Server/ConnectionsCount.txt', 'utf8', function(err, data) {  
             if (err) throw err;
             if (data == 1)
